@@ -4,7 +4,7 @@ sudo rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch
 cp /root/software_shortcut/elasticsearch.repo /etc/yum.repos.d/elasticsearch.repo
 
 echo -e "\e[36m Installing Elasticsearch\e[0m"
-yum install elasticsearch-y
+yum install elasticsearch -y
 
 echo -e "\e[36m Enabling and starting Elasticsearch\e[0m"
 systemctl enable elasticsearch
